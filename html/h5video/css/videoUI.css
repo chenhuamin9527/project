@@ -1,0 +1,119 @@
+.box
+{
+    width: 600px;
+    height: 40px;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #232;
+    border: 1px solid red;
+}
+
+.play
+{
+    float: left;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    margin-top: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pause
+{
+    float: left;
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.progress
+{
+    width: 400px;
+    height: 8px;
+    background-color: white;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 16px;
+    margin-left: 10px;
+    box-shadow: 1px 1px 2px 2px #132;
+    position: relative;
+}
+
+.bar
+{
+    width: 0%;
+    height: 100%;
+    background-color: #CCC;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.control
+{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    box-shadow: 1px 1px 2px 2px #132;
+}
+
+.soundon
+{
+    width: 10px;
+    height: 8px;
+    border-right: 15px solid #FFF;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.soundoff
+{
+    width: 10px;
+    height: 8px;
+    border-right: 15px solid #CCC;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.full
+{
+    width: 15px;
+    height: 15px;
+    border: 3px solid #FFF;
+    float: left;
+    margin-top: 12px;
+    margin-left: 80px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.full:hover
+{
+    width: 20px;
+    height: 20px;
+    border: 3px solid #CCC;
+    margin-top: 10px;
+    margin-left: 77px;
+}

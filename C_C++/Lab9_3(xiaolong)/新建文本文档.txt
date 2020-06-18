@@ -1,0 +1,28 @@
+2020.05.12-12=2020.04.30
+164-12=152
+Date Date::AddorSubInteger(const Date& date,int a)
+{
+	int nowtotalDays=date.gettotalDays()-a;
+	int newday;
+	int newmonth;
+	int newyear;
+	int nday;
+	if(date.getDay()>a)
+	{
+		newday=date.getDay()-a;
+		newmonth=month;
+		newyear=year;
+	}
+	if(date.getDay()<a &&DAYS_BEFORE_MONTH[date.getMonth()]>a)
+	{
+		nday=DAYS_BEFORE_MONTH[date.getMonth()]-a;
+		for(int i=0;i<12;i++)
+		{
+			if(DAYS_BEFORE_MONTH[i]<nday&&DAYS_BEFORE_MONTH[i+1]>nday)
+				newmonth=i;
+				newday=nday-DAYS_BEFORE_MONTH[i];
+		}
+		newyear=year;
+	}
+}
+Î´ÍêÕû£¡

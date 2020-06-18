@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #first{
+            width: 400px;
+            height: 220px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        #second{
+            width: 400px;
+            height: 220px;
+            margin: 0 auto;
+            margin-top: 5px;
+            border: 1px solid blue;
+        }
+    </style>
+    <script>
+        var objImg;
+        function startDrag(that)
+        {
+            objImg = that;
+            console.log(objImg);
+        }
+
+        function enter()
+        {
+            e = window.event;
+            e.preventDefault();
+        }
+
+        function getObj(that)
+        {
+            //that.appendChild(objImg);
+            var cloneObj = objImg.cloneNode();
+            that.appendChild(cloneObj);
+        }
+    </script>
+</head>
+<body>
+    <div id="first" ondragenter="enter()" ondragover="enter()" ondrop="getObj(this)">
+        <img src="img/1.JPG" draggable="true" ondragstart="startDrag(this)">
+        <img src="img/2.JPG" draggable="true" ondragstart="startDrag(this)">
+        <img src="img/3.JPG" draggable="true" ondragstart="startDrag(this)">
+    </div>
+    <div id="second" ondragenter="enter()" ondragover="enter()" ondrop="getObj(this)">
+
+    </div>
+</body>
+</html>

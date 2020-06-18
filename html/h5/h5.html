@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setbg()
+        {
+            var colorObj=document.myfrm.mybg;
+            var vv=colorObj.value;
+            document.body.style.backgroundColor=vv;
+        }
+    </script>
+</head>
+<body>
+    <form method="" name="myfrm">
+        <table>
+            <tr>
+                <td>请输入你的邮箱地址：</td>
+                <td><input type="email" name = "myemail" placeholder="输入邮箱地址"></td>
+            </tr>
+            <tr>
+                <td>请输入一个网址：</td>
+                <td><input type="url" name = "myurl" placeholder="输入网址"></td>
+            </tr>
+            <tr>
+                <td>请输入数字：</td>
+                <td><input type="number" name = "mynumber"></td>
+            </tr>
+            <tr>
+                <td>数字拖动条：</td>
+                <td><input type="range" name = "myrange" min = 0 max = 200 value = 0></td>
+                <td><input type="number" value= myrange.value></td>
+            </tr>
+            <tr>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><input type="color" value="red" name = "mybg" onchange="setbg()"></td>
+            </tr>
+            <tr>
+                <td><select>
+                    <option value="亢龙有悔">亢龙有悔</option>
+                    <option value="飞龙在天">飞龙在天</option>
+                    <option value="见龙在田">见龙在田</option>
+                    <option value="神龙摆尾">神龙摆尾</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value = "提交"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

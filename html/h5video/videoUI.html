@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-videoUI</title>
+    <link rel="stylesheet" href="css/videoUI.css" type="text/css">
+    <script src="js/videoUI.js"></script>
+</head>
+<body>
+    <video id="myvideo" src="http://ssbylw.scnu.edu.cn/ice.mp4" controls="controls" loop="loop" autoplay="autoplay"></video>
+    <!-- 播放控制面板 -->
+    <div id="box" class="box">
+        <!-- 播放暂停 -->
+        <div id="play" class="play"></div>
+        <!-- 进度条 -->
+        <div id="progress" class="progress">
+            <!-- 已播放部分 -->
+            <div id="bar" class="bar"></div>
+            <!-- 滑轮 -->
+            <div id="control" class="control"></div>
+        </div>
+        <!-- 声音 -->
+        <div id="sound" class="soundon"></div>
+        <!-- 声音控制 -->
+        <div id="volume" class="volume">
+            <div id="volume-bar" class="volume-bar"></div>
+            <div id="volume-control" class="volume-control"></div>
+        </div>
+        <!-- 全屏 -->
+        <div id="full" class="full"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+
+        li{
+            list-style-type: none;
+            width:160px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        a{
+            font-size: 19px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        div ul li{
+            float: left;
+            background-color: skyblue;
+        }
+
+        div ul li ul li{
+            display: none;
+        }
+
+        div ul li:hover ul li{
+            display: block;
+
+        }
+
+        div ul li:hover {
+            color:black;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a>首页</a> 
+                <ul>
+                    <li><a>教育动态</a></li>
+                    <li><a>学术动态</a></li>
+                </ul>
+            </li>
+
+            <li><a>学院概况</a>
+                <ul>
+                    <li><a>学院简介</a></li>
+                    <li><a>机构设置</a></li>
+                </ul>
+            </li>
+
+            <li><a>师资队伍</a>
+                <ul>
+                    <li><a>教育名单及简介</a></li>
+                    <li><a>导师名单及简介</a></li>
+                </ul>
+            </li>
+
+            <li><a>人才培养</a>
+                <ul>
+                    <li><a>本科教育</a></li>
+                    <li><a>博点硕点</a></li>
+                </ul>
+            </li>
+
+            <li><a>学术科研</a>
+                <ul>
+                    <li><a>二级学科</a></li>
+                    <li><a>重点学科</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
