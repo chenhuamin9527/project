@@ -1,2 +1,2 @@
 # project
-my coding
+Some excecise about Coding
