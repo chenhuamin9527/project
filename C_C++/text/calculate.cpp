@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-const double EXP = 0.0001;
+const double EXP = 0.0001;  //浮点数误差控制
 bool judge(double n)
 {
 	if (n <= EXP - 1 && n >= -1 - EXP)
@@ -15,8 +15,8 @@ int main()
     double sum = 0;
     while (!judge(n))
     {
-        cout << "input the price and number" << endl;
-        cin >> price >> n;  //褰撶粨鏉熸椂杈撳叆-1
+        cout << "输入单价和数量" << endl;
+        cin >> price >> n;  //当结束时输入-1
         if(judge(price))
             break;
         sum += price * n;
