@@ -14,13 +14,13 @@ private:
     string message;
 };
 
-void divide(float a, float b) throw (overflow_error)
+void divide(float a, float b)
 {
     if(b==0)
     {
         throw range_error("a is divided by zero!");
     }
-    if(a/b < 0)
+    if(a/b < 0 || a/b > 1e200)
     {
         throw overflow_error("result is too large!");
     }
@@ -30,14 +30,13 @@ int main()
 {   
     try
     {
-        divide(3.0,2.2);
-        //divide(2,0);
-        divide(10000, 1e-128);
+        //divide(3.0,2.2);
+        divide(2,0);
+        divide(10000, 1e-500);
     }
     catch(exception& e)
     {
         cout << e.what() << '\n';
     }
-    
     return 0;
 }
