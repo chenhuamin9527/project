@@ -1,0 +1,22 @@
+*{margin:0;padding:0;}
+ul,li{ list-style:none;}
+
+a{ text-decoration:none;}
+
+
+
+#banner{width:1024px;margin:0 auto;}
+
+
+#nav{width:1024px;margin:0 auto;}
+
+
+#nav ul{overflow:hidden; height:40px; line-height:40px;background:#000;}
+#nav ul li{ float:left;margin-left:50px;}
+#nav ul li a{color:#fff;}
+
+
+#cont{width:984px;margin:0 auto;overflow:hidden;background:#eee;padding:20px;}
+
+
+
