@@ -266,3 +266,23 @@ int main()
     return 0;
 }
 ```
+
+- 原理：对于任意合数，必定可以有最小质因子乘以最大因子的分解方式。因此，对于每个合数，只要用最大因子筛一遍，枚举时只要枚举最小质因子即可。
+
+```c++
+int vis[MAXN];
+int prime[MAXN];
+void Prime()
+{
+	int cnt=0;
+	for(int i=2;i<=n;i++)
+    {
+        if(!vis[i]) prime[cnt++]=i;
+        for(int j=0;j<cnt&&i*prime[j]<=n;j++)
+        {
+            vis[i*prime[j]]=i;
+            if(i%prime[j]==0) break;
+        }
+    }
+}
+```
