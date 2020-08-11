@@ -41,6 +41,9 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "cassert": "cpp"
+        "cassert": "cpp",
+        "cmake.configureOnOpen" : true,
+        "cmake.cmakePath": "D:\\CMake\\bin\\cmake.exe"
     }
+
 }
