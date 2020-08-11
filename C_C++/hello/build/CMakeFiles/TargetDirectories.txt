@@ -1,0 +1,3 @@
+D:/projects/C_C++/hello/build/CMakeFiles/Hello.dir
+D:/projects/C_C++/hello/build/CMakeFiles/edit_cache.dir
+D:/projects/C_C++/hello/build/CMakeFiles/rebuild_cache.dir
