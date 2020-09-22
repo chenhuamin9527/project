@@ -18,6 +18,32 @@ private:
    int length;            //线性表的长度
 };
 
+void SeqList::Reverse()
+{
+  for (int i = 0; i < length/2; i++)
+  {
+    int t = data[i];
+    data[i] = data[length-1-i];
+    data[length-1-i] = t; 
+  }
+}
+
+void SeqList::Adjust()
+{
+  int tail = length-1;
+  int head = 0;
+  while(head <= tail)
+  {
+    while(data[head]%2==1) head++;
+    while(data[tail]%2==0) tail--;
+    int t = data[head];
+    data[head] = data[tail];
+    data[tail] = t;
+    head++;
+    tail--;
+  }
+}
+
 SeqList::SeqList(int a[ ], int n)
 {
       if (n>MaxSize) throw "参数非法";
@@ -61,33 +87,6 @@ void SeqList::PrintList( )
   cout<<endl;
 }
 
-void SeqList::Reverse( )
-{
-	for(int i=0;i<length/2;i++)
-	{
-		int t=0;
-		t=data[i];
-		data[i]=data[length-1-i];
-		data[length-i-i]=t;
-	}
-}
-
-void SeqList::Adjust()
-{
-  int tail = length-1;
-  int head = 0;
-  while(head <= tail)
-  {
-    while(data[head]%2==1) head++;
-    while(data[tail]%2==0) tail--;
-    int t = data[head];
-    data[head] = data[tail];
-    data[tail] = t;
-    head++;
-    tail--;
-  }
-}
-
 int main( )
 {
       int r[10]={1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
@@ -100,5 +99,5 @@ int main( )
       L.Adjust();
       cout<<"执行奇偶调整操作后数据为："<<endl;
       L.PrintList( );              //输出所有元素
-	return 0;
+  return 0;
 }

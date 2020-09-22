@@ -1,0 +1,1 @@
+if( (NULL==ListHead)||(NULL==ListHead->next) )return ;  //边界检测
