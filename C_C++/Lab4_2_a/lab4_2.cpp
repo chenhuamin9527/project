@@ -25,40 +25,50 @@ private:
 template <class DataType>
 LinkQueue<DataType>::LinkQueue( )
 {
-
+	Node<DataType>* p = new Node<DataType>;
+	front = p;
+	rear = p;
 }
 
 template <class DataType>
 LinkQueue<DataType>::~LinkQueue( )
 {
-
+	
 }
 
 template <class DataType> 
 void LinkQueue<DataType>::EnQueue(DataType x)
 {
-
+	Node<DataType>* p = new Node<DataType>;
+	p->data = x;
+	p->next = NULL;
+	rear->next = p;
+	rear = p;
 }
 
 template <class DataType>
 DataType LinkQueue<DataType>::DeQueue()
 { 
-
+	Node<DataType>* p = front->next;
+	DataType temp = p->data;
+	front->next = p->next;
+	return temp;
 }
 
 template <class DataType> 
 DataType LinkQueue<DataType>::GetQueue()
 {
-
+	Node<DataType>* p = front->next;
+	return p->data;
 }
 
 template <class DataType> 
 int LinkQueue<DataType>::Empty( )
 {
-
+	return rear == front;
 }
 
-void main()
+int main()
 {
     LinkQueue<int> Q;         //创建模版类的实例 
     if (Q.Empty())
@@ -88,4 +98,5 @@ void main()
 	}
 	cout<<"查看队头元素:"<<endl;
 	cout<<Q.GetQueue( )<<endl;
+	return 0;
 }

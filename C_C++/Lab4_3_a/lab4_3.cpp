@@ -42,13 +42,29 @@ LinkQueue<DataType>::~LinkQueue( )
 template <class DataType> 
 void LinkQueue<DataType>::EnQueue(DataType x)
 {
-
+	if(rear == NULL)
+	{
+	 	rear = new Node<DataType>;
+		rear->data = x;
+		rear->next = rear;
+	}	
+	else
+	{
+		Node<DataType> *p = new Node<DataType>;
+		p->data = x;
+		p->next = rear->next;
+		rear->next = p;
+		rear = p;	
+	}
+	
 }
 
 template <class DataType>
 DataType LinkQueue<DataType>::DeQueue()
 {
-
+	DataType temp = rear->next->data;
+	rear->next = rear->next->next;
+	return temp;
 }
 
 template <class DataType> 
@@ -56,10 +72,11 @@ DataType LinkQueue<DataType>::GetQueue()
 {
     if (rear!=NULL) 
 		return rear->next->data;
+	return NULL;
 }
 
 
-void main()
+int main()
 {
     LinkQueue<int> Q;         //创建模版类的实例 
 	cout<<"元素10和15执行入队操作:"<<endl;
@@ -87,4 +104,5 @@ void main()
 	cout<<Q.GetQueue( )<<endl;
 
 	getchar();
+	return 0;
 }

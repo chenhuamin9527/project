@@ -7,7 +7,7 @@ template <class DataType>       //定义模板类SeqStack
 class SeqStack
 {
 public:
-    SeqStack( ) ;            //构造函数，栈的初始化
+    SeqStack( );            //构造函数，栈的初始化
 	~SeqStack( );            //析构函数
     void Push(DataType x);          //将元素x入栈
     DataType Pop( );                //将栈顶元素弹出
@@ -15,7 +15,7 @@ public:
 	int Empty( );           //判断栈是否为空
 private:
     DataType data[StackSize];      //存放栈元素的数组
-    int top;                //栈顶指针，指示栈顶元素在数组中的下标
+    int top = -1;                //栈顶指针，指示栈顶元素在数组中的下标
 };
 
 template <class DataType>
@@ -33,28 +33,31 @@ SeqStack<DataType>::~SeqStack( )
 template <class DataType> 
 void SeqStack<DataType>::Push(DataType x)
 {
-
+	top++;
+	data[top] = x;
 }
 
 template <class DataType>
 DataType SeqStack<DataType>::Pop( )
-{ 
-
+{
+	DataType temp = data[top];
+	top--;
+	return temp;
 }
 
 template <class DataType> 
 DataType SeqStack<DataType>::GetTop( )
 {
-
+	return data[top];
 }
 
 template <class DataType> 
 int SeqStack<DataType>::Empty( )
 {
-
+	return top == -1;
 } 
 
-void main( )
+int main( )
 {    
     SeqStack<int> S;      //创建模板类的实例
 	if (S.Empty()==1)
@@ -72,4 +75,5 @@ void main( )
     cout<<S.GetTop( )<<endl;
 	
 	getchar();
+	return 0;
 }
