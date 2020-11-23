@@ -86,20 +86,42 @@ void Tree::Release(TNode *bt)
 
 void Tree::PreOrder(TNode *bt)
 {
-
+	if(bt == nullptr) return;
+	else
+	{
+		cout << bt->data;
+		PreOrder(bt->firstchild);
+		PreOrder(bt->rightsib);
+	}
 }
 
 void Tree::PostOrder(TNode *bt)
 {
-
+	if(bt == nullptr) return;
+	else
+	{
+		PostOrder(bt->firstchild);
+		cout << bt->data;
+		PostOrder(bt->rightsib);
+	}
 }
 
 int Tree::Depth(TNode *bt)
 {
+	static int d = 1;
+	static int ldepth = 0,rdepth = 0;
+	if(bt==nullptr) return 0;
+	else
+	{
+		ldepth=Depth(bt->firstchild);
+		d = max(ldepth,rdepth)+1;
+		rdepth=Depth(bt->rightsib);
 
+	}
+	return d;
 }
 
-
+// A AB AC BD BE BF CG CH EI ##
 int main( )
 {
 	Tree t1;

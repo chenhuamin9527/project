@@ -3,32 +3,27 @@ using namespace std;
 
 class Solution {
 public:
-    int strStr(string haystack, string needle) {
-        int haystack_l = haystack.length();
-        int needle_l = needle.length();
-        if(needle_l == 0) return 0;
-        int p1 = 0;
-        int p2 = 0;
-        while(p1 < haystack_l - needle_l +1)
+    string longestCommonPrefix(vector<string>& strs) {
+        string ans;
+        string pub = strs[0];
+        for(int i = 0; i < strs.size(); i++)
         {
-            while(p1 < haystack_l - needle_l +1 && haystack[p1] != needle[p2]) p1++;
-            int currlen = 0;
-            while(p1 < haystack_l && p2 < needle_l && haystack[p1] == needle[p2])
+            for(int j = 0;j < strs[0].size(); j++)
             {
-                p1++;
-                p2++;
-                currlen++;
-            }
-            if(currlen == needle_l) return p1 - currlen;
-            p1 = p1 - currlen + 1;
-            p2 = 0;
+                if(pub[j]!=strs[i][j])
+                {
+                    pub = pub.substr(0,j);
+                    break;
+                }
+            }   
         }
-        return -1;
+        return pub;
     }
 };
 int main()
 {
     Solution solution;
-    cout << solution.strStr("mississippi","issip");
+    vector<string> strs = {"flower","flow","flight"};
+    cout << solution.longestCommonPrefix(strs);
     return 0;
 }
