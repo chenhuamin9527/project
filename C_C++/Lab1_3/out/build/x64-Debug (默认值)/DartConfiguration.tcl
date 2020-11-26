@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "D:/projects/C_C++/Lab1_3"
-MakeCommand: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "D:/VisualStudio2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "D:/projects/C_C++/Lab1_3"
+MakeCommand: D:\VisualStudio2019\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.27.29110/bin/Hostx64/x64/cl.exe
-CompilerVersion: 19.27.29110.0
+Compiler: D:/VisualStudio2019/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe
+CompilerVersion: 19.28.29334.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

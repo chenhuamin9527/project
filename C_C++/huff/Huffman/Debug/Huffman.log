@@ -1,0 +1,155 @@
+﻿  BitStream.cpp
+D:\projects\C_C++\huff\Huffman\BitStream.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\BitStream.cpp(25,13): error C2065: “bitCode”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\BitStream.cpp(29,25): error C2065: “bitCode”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\BitStream.cpp(33,13): error C2065: “bitCode”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\BitStream.cpp(37,25): error C2065: “bitCode”: 未声明的标识符
+  Heap.cpp
+D:\projects\C_C++\huff\Huffman\Heap.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\Heap.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\HuffmanTree.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\Heap.h(21,11): error C2065: “a”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.h(21,14): error C2059: 语法错误:“=”
+D:\projects\C_C++\huff\Huffman\Heap.h(21,20): error C2238: 意外的标记位于“;”之前
+D:\projects\C_C++\huff\Huffman\Heap.h(22,11): error C2065: “b”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.h(22,14): error C2059: 语法错误:“=”
+D:\projects\C_C++\huff\Huffman\Heap.h(22,17): error C2238: 意外的标记位于“;”之前
+D:\projects\C_C++\huff\Huffman\Heap.h(25,5): error C2628: “Heap”后面接“void”是非法的(是否忘记了“;”?)
+D:\projects\C_C++\huff\Huffman\Heap.h(27,1): error C2059: 语法错误:“public”
+D:\projects\C_C++\huff\Huffman\Heap.h(29,10): error C2059: 语法错误:“)”
+D:\projects\C_C++\huff\Huffman\Heap.h(29,12): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\Heap.h(29,12): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\Heap.h(36,14): error C2062: 意外的类型“int”
+D:\projects\C_C++\huff\Huffman\Heap.h(38,40): error C2065: “h”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.h(40,1): error C2059: 语法错误:“}”
+D:\projects\C_C++\huff\Huffman\Heap.h(40,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\C_C++\huff\Huffman\Heap.h(46,12): error C2661: “Heap::Heap”: 没有重载函数接受 2 个参数
+D:\projects\C_C++\huff\Huffman\Heap.cpp(7,41): error C2511: “Heap::Heap(int,HuffmanTreeNode *[])”:“Heap”中没有找到重载的成员函数
+D:\projects\C_C++\huff\Huffman\Heap.h(11): message : 参见“Heap”的声明
+D:\projects\C_C++\huff\Huffman\Heap.cpp(8,5): error C2597: 对非静态成员“Heap::size”的非法引用
+D:\projects\C_C++\huff\Huffman\Heap.h(15): message : 参见“Heap::size”的声明
+D:\projects\C_C++\huff\Huffman\Heap.cpp(9,5): error C2597: 对非静态成员“Heap::contain”的非法引用
+D:\projects\C_C++\huff\Huffman\Heap.h(13): message : 参见“Heap::contain”的声明
+D:\projects\C_C++\huff\Huffman\Heap.cpp(10,21): error C2597: 对非静态成员“Heap::contain”的非法引用
+D:\projects\C_C++\huff\Huffman\Heap.cpp(10,21): error C3867: “Heap::contain”: 非标准语法；请使用 "&" 来创建指向成员的指针
+D:\projects\C_C++\huff\Huffman\Heap.cpp(10,25): error C2671: “Heap::{ctor}”: 静态成员函数没有“this”指针
+D:\projects\C_C++\huff\Huffman\Heap.cpp(16,12): error C2039: "_enlarge": 不是 "Heap" 的成员
+D:\projects\C_C++\huff\Huffman\Heap.h(11): message : 参见“Heap”的声明
+D:\projects\C_C++\huff\Huffman\Heap.cpp(16,50): error C2556: “void _enlarge(HuffmanTreeNode *[],int)”: 重载函数与“Heap _enlarge(HuffmanTreeNode *[],int)”只是在返回类型上不同
+D:\projects\C_C++\huff\Huffman\Heap.h(25): message : 参见“_enlarge”的声明
+D:\projects\C_C++\huff\Huffman\Heap.cpp(16,20): error C2371: “_enlarge”: 重定义；不同的基类型
+D:\projects\C_C++\huff\Huffman\Heap.h(25): message : 参见“_enlarge”的声明
+D:\projects\C_C++\huff\Huffman\Heap.cpp(18,5): error C2065: “contain”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.cpp(18,15): error C2065: “contain”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.cpp(19,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+D:\projects\C_C++\huff\Huffman\Heap.cpp(19,37): error C2065: “contain”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.cpp(19,49): error C3078: 必须在没有初始化表达式的新表达式中指定数组大小
+D:\projects\C_C++\huff\Huffman\Heap.cpp(21,9): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+D:\projects\C_C++\huff\Huffman\Heap.cpp(37,13): error C3861: “_swap”: 找不到标识符
+D:\projects\C_C++\huff\Huffman\Heap.cpp(35,24): error C2043: 非法 break
+D:\projects\C_C++\huff\Huffman\Heap.cpp(41,1): error C2059: 语法错误:“}”
+D:\projects\C_C++\huff\Huffman\Heap.cpp(41,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\C_C++\huff\Huffman\Heap.cpp(43,53): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\Heap.cpp(43,53): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\Heap.cpp(66,5): error C3861: “_swap”: 找不到标识符
+D:\projects\C_C++\huff\Huffman\Heap.cpp(74,9): error C2065: “_enlarge”: 未声明的标识符
+  HuffmanTree.cpp
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\HuffmanTree.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\Heap.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\Heap.h(21,11): error C2065: “a”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.h(21,14): error C2059: 语法错误:“=”
+D:\projects\C_C++\huff\Huffman\Heap.h(21,20): error C2238: 意外的标记位于“;”之前
+D:\projects\C_C++\huff\Huffman\Heap.h(22,11): error C2065: “b”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.h(22,14): error C2059: 语法错误:“=”
+D:\projects\C_C++\huff\Huffman\Heap.h(22,17): error C2238: 意外的标记位于“;”之前
+D:\projects\C_C++\huff\Huffman\Heap.h(25,5): error C2628: “Heap”后面接“void”是非法的(是否忘记了“;”?)
+D:\projects\C_C++\huff\Huffman\Heap.h(27,1): error C2059: 语法错误:“public”
+D:\projects\C_C++\huff\Huffman\Heap.h(29,10): error C2059: 语法错误:“)”
+D:\projects\C_C++\huff\Huffman\Heap.h(29,12): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\Heap.h(29,12): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\Heap.h(36,14): error C2062: 意外的类型“int”
+D:\projects\C_C++\huff\Huffman\Heap.h(38,40): error C2065: “h”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\Heap.h(40,1): error C2059: 语法错误:“}”
+D:\projects\C_C++\huff\Huffman\Heap.h(40,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\C_C++\huff\Huffman\Heap.h(46,12): error C2661: “Heap::Heap”: 没有重载函数接受 2 个参数
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(39,12): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(39,12): error C2065: “parent”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(40,1): error C2059: 语法错误:“}”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(40,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(42,112): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(42,112): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(56,9): error C2065: “codeBook”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(71,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(73,23): error C2065: “codeBook”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(76,22): error C2065: “j”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(81,17): error C2065: “codes”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(87,5): error C2059: 语法错误:“if”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(87,24): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(87,24): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(99,29): error C2065: “bits”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(100,30): error C2065: “fout”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(100,34): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(100,5): error C2365: “fputc”: 重定义；以前的定义是“函数”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(216): message : 参见“fputc”的声明
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,5): error C2059: 语法错误:“for”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,5): error C2143: 语法错误: 缺少“)”(在“;”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,23): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,23): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,40): error C2143: 语法错误: 缺少“;”(在“++”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,40): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,39): error C2086: “int i”: 重定义
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102): message : 参见“i”的声明
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,42): error C2059: 语法错误:“)”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,43): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(102,43): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(105,11): error C2065: “buffer”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(105,19): error C2065: “fout”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(105,23): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(105,5): error C2365: “fputc”: 重定义；以前的定义是“函数”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(216): message : 参见“fputc”的声明
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(106,1): error C2059: 语法错误:“}”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(106,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(108,49): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(108,49): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(134,22): error C2065: “treeNodes”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(136,9): error C3927: "->": 非函数声明符后不允许尾随返回类型
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(136,9): error C3484: 语法错误: 返回类型前应为“->”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(136,23): error C3613: “->”后缺少返回类型(假定为“int”)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(136,23): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(136,5): error C2371: “tree”: 重定义；不同的基类型
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(134): message : 参见“tree”的声明
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(136,10): error C2146: 语法错误: 缺少“;”(在标识符“buildCodeBook”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(137,9): error C3927: "->": 非函数声明符后不允许尾随返回类型
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(137,9): error C3484: 语法错误: 返回类型前应为“->”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(137,19): error C3613: “->”后缺少返回类型(假定为“int”)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(137,19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(137,5): error C2371: “tree”: 重定义；不同的基类型
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(134): message : 参见“tree”的声明
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(137,10): error C2146: 语法错误: 缺少“;”(在标识符“writeCode”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(138,12): error C2065: “fout”: 未声明的标识符
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(138,16): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(138,5): error C2365: “fclose”: 重定义；以前的定义是“函数”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(147): message : 参见“fclose”的声明
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(139,1): error C2059: 语法错误:“}”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(139,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(141,56): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(141,56): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(161,29): error C2044: 非法 continue
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(164,5): error C2059: 语法错误:“return”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(165,1): error C2059: 语法错误:“}”
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(165,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(167,49): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\projects\C_C++\huff\Huffman\HuffmanTree.cpp(167,49): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+  main.cpp
+D:\projects\C_C++\huff\Huffman\HuffmanTree.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\projects\C_C++\huff\Huffman\main.cpp(11,17): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(12,18): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(18,17): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(19,18): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(34,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(46,17): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(48,17): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(54,17): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\C_C++\huff\Huffman\main.cpp(56,17): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  正在生成代码...
