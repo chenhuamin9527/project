@@ -10,39 +10,62 @@ struct TreeNode
 
 class Solution {
 public:
-    bool isValidBST(TreeNode* root) {
-        stack<TreeNode*> stack;
-        long long inorder = (long long)INT_MIN - 1;
-
-        while (!stack.empty() || root != nullptr) {
-            while (root != nullptr) {
-                stack.push(root);
-                root = root -> left;
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        vector<int> ans;
+        int p1 = 0;
+        int p2 = 0;
+        while(p1+p2 <= m+n)
+        {
+            if(p1>=m)
+            {
+                while(p2<n)
+                {
+                    ans.push_back(nums2[p2]);
+                    p2++;
+                }
+                break;
             }
-            root = stack.top();
-            cout << root->val << endl;
-            stack.pop();
-            // 如果中序遍历得到的节点的值小于等于前一个 inorder，说明不是二叉搜索树
-            if (root -> val <= inorder) {
-                return false;
+            if(p2>=n)
+            {
+                while(p1<m)
+                {
+                    ans.push_back(nums1[p1]);
+                    p1++;
+                }
+                break;
             }
-            inorder = root -> val;
-            root = root -> right;
+            if(nums1[p1]<=nums2[p2])
+            {
+                ans.push_back(nums1[p1]);
+                p1++;
+            }
+            else
+            {
+                ans.push_back(nums2[p2]);
+                p2++;
+            }
         }
-        return true;
+        for(int i = 0; i < ans.size();i++)
+        {
+            cout << ans[i] << " ";
+        }
+        cout << endl;
+        for(int i = 0; i < ans.size();i++)
+        {
+            nums1[i] = ans[i];
+        }
     }
 };
 
 
 int main()
 {
-    TreeNode * root = new TreeNode(4);
-    root->left = new TreeNode(2);
-    root->left = new TreeNode(5);
-    root->left->left = new TreeNode(1);
-    root->left->right = new TreeNode(3);
-    root->right->right = new TreeNode(6);
     Solution solution;
-    solution.isValidBST(root);
+    vector<int> v1 = {1,2,3};
+    vector<int> v2 = {2,5,6};
+    int m = 3;
+    int n = 3;
+    solution.merge(v1, m, v2, n);
+    
     return 0;
 }
