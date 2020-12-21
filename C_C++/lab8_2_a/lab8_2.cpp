@@ -113,7 +113,7 @@ void MGraph<DataType>::Prim(int v)
 		}
 	}
 }
-
+//0 1 34 0 2 46 0 5 19 1 4 12 2 3 17 2 5 25 3 4 30 3 5 25 4 5 26
 int main( )
 {
 	char ch[]={'A','B','C','D','E','F'};
